@@ -1,0 +1,393 @@
+﻿body {
+    padding:3px;
+    background-color:whitesmoke;
+    height:100%;
+    cursor:default;
+}
+.container{
+    width: 830px !important;
+}
+@media screen and (max-width: 600px) {
+    .row {
+        flex-direction: column;
+       
+    }
+    .cardfooter .row {
+        flex-direction:unset;
+    }
+    .cardfooter .thumbs{
+        height:50px;width:50px;
+        border-radius:50%;
+    }
+    .footer button {
+        font-size: 10px;
+    }
+   
+        .footer p {
+            padding:1px;
+            margin: 0;
+            vertical-align: middle;
+        }
+    .header {
+        height: auto;
+        width: 100%;
+        background-color: #b4b4b4;
+      
+    }
+
+    .Sbtn{
+        height:50%;
+        top:0;
+        padding:2px;
+    }
+
+    
+}
+@media screen and (max-width: 750px) {
+
+    .ExtHdr {
+        font-size: 18px;
+        padding: 5px;
+       
+    }
+}
+
+.thumbs {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #808080;
+}
+
+    .thumbs:hover {
+        box-shadow:#00acee 0px 0px 10px;
+        transition:ease-in-out,.5s;
+    }
+.slist{
+    padding-bottom:10px;
+}
+
+.Logo {
+    font-size: 50px;
+    text-decoration: none;
+    width: auto;
+    border: 1px thin #00acee;
+    padding: 3px;
+}
+.nav-item:hover, .nav-item.active    {
+        background: #00acee;
+        color: whitesmoke;
+        transition: linear .5s;
+        cursor: pointer;
+        border-radius: 10px;
+        
+    }
+
+a {
+    text-decoration: none;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+.navbar ul li{
+    width: 150px;
+}
+.navbar ul li a{
+    text-align: center;
+}
+.navbar ul li a i.fa{
+    font-size: 28px;
+}
+
+.Sbtn {
+    border:none;
+    background-color: #00acee;
+    border-radius:3px;
+}
+.LogoLetter {
+    color: #00acee;
+}
+
+#Typewriter{
+    height: 33px;
+    width: 50%
+}
+
+#MSbox{
+   margin-top:3px;
+    padding:3px;
+   width:90%;
+   color: black;
+}
+
+input[type=search] {
+    border: none;
+    border-bottom: 1px solid #00acee;
+}
+   
+.main-container{
+    padding-top:60px;
+    padding-bottom:45px;
+}
+.MsearchBox{
+    width: 100%
+}
+
+.MsearchBox .fa-search {
+    color:#00acee;
+}
+#MSbox:hover, :focus {
+    background-color: transparent;
+    outline: unset;
+}
+
+.MsBtn {
+    border: none;
+    background-color: transparent;
+}
+.subHdr{
+    background-color:#ff0000;
+}
+
+
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-row{
+    background-color:#00acee;
+    height:30px;
+    text-align:center;
+}
+.nav-btn a {
+    border: none;
+    color: #808080;
+    background-color: transparent;
+}
+    .nav-btn button:hover{
+        transform:scale(1.1);
+        transition:ease .5s;
+    }
+
+    .btn-group button {
+        border: none;
+        color: #808080;
+        background-color: transparent;
+    }
+.btn-group{
+    padding:10px;
+}
+
+    .btn-group button:hover {
+        border: none;
+        color: #00acee;
+        transform:scale(1.1);
+        transition:ease-in-out .5s;
+        background-color: transparent;
+    }
+.uid{
+    color:#00acee;
+    font-size:12px;
+    padding-right:5px;
+}
+
+.footer {
+    height: 25px;
+    width: 100%;
+    background-color: #b4b4b4;
+   
+}
+
+    .footer a {
+        border: none;
+        text-decoration: none;
+        background-color: none;
+        color: black;
+        font-size: 10px;
+        margin: 0;
+        vertical-align: middle;
+    }
+    .footer p {
+        
+        font-size: 10px;
+        margin:0;
+       
+    }
+        
+
+.fa-thumbs-o-down{
+    color:red;
+}
+.fa-thumbs-o-up {
+    color:green;
+}
+
+
+
+.sharer {
+    position: fixed;
+    top:50%;
+    right:10px;
+    z-index:3;
+    display:none;
+}
+
+
+
+.disclaimer{
+    background-color:#eae8e8;
+    height:40px;
+    padding-top:1px;
+    border-radius:10px;
+    font-size:small;
+}
+
+.cardheader {
+    height: 4%;
+    background-color:#b4b4b4;
+    overflow-x: hidden;
+    padding:1px;
+    border:1px solid #b4b4b4;
+}
+
+.cardfooter {
+    height: 4%;
+    background-color: #eae8e8;
+    vertical-align: central;
+}
+
+.cardbody {
+   overflow:hidden;
+   height:20%;
+   padding:10px;
+}
+
+.imgg {
+   
+    height: 150px;
+    width: 150px;
+   border-radius:20px;
+    image-resolution: 300dpi;
+}
+.sharebtn{
+    color:#b4b4b4;
+}
+
+.header {
+    height: 40px;
+    width: 100%;
+    background-color: #b4b4b4;
+}
+
+nav a{
+    color:black;
+}
+
+.titlebar{
+    height:5%;
+    background-color:#808080;
+    vertical-align:central;
+    padding:2px;
+    top:0;
+    z-index:3;
+    transition:ease .5s;
+}
+.titlebar a{
+    color:white;
+}
+    .titlebar a:hover,:focus{
+        color:whitesmoke;
+        text-decoration:none;
+    }
+
+    .navbar-brand {
+        font-size: medium;
+    }
+
+nav .close{
+    color:#ff0000;
+}
+
+.Ltitle{
+    
+    left:10px;
+    
+}
+
+.icon-bar {
+    width: 100%;
+    top: 8px;
+    position: fixed;
+    z-index: 3;
+    padding:3px;
+}
+
+    .icon-bar a {
+        float: left;
+        width: 25%;
+        text-align: center;
+        padding: 5px 0;
+        transition: all 0.3s ease;
+       color:#00acee;
+        font-size: 10px;
+    }
+        .icon-bar a:hover {
+           transform:scale(1.1);
+            transition: ease-in-out,.5s;
+            color: #00acee;
+        }
+
+
+.ExtHdr {
+    font-size: 25px;
+    padding: 5px;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    position: sticky;
+    padding: 2px;
+}
+
+.Authorinfo {
+    font-style: italic;
+    font-size: x-small
+}
+
+.cardfooter .col{
+   text-align:left;
+}
+
+.cardfooter .row{
+    padding:20px;
+}
+.cardfooter:hover {
+    box-shadow: rgba(0, 172, 238, 0.41) 0px 0px 10px;
+    transition: ease-in-out,.5s;
+    background-color:rgba(0, 172, 238, 0.16);
+}
+.right-side-bar {
+    height: 100%; 
+    width: 250px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 43px;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+

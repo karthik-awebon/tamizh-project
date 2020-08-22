@@ -1,0 +1,519 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/jquery-3.5.1.min.js"></script>
+    <script src="Scripts/umd/popper.js"></script>
+    <script src="Scripts/umd/popper.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Content/site.css" />
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="Content/font-awesome.min.css" />
+    <title>மென் எழுத்து</title>
+</head>
+<body data-spy="scroll" id="MainBody" data-target="#Nvbar">
+    <nav  class="titlebar fixed-top" id="Nvbar">
+        <a href="#" class="Ltitle"><span id="lo" class=" LogoLetter">மெ</span>ன்<span class="LogoLetter" id="logg">எழு</span>த்து</a>
+        <form class="form-inline " style="float:right;padding-right:5px;">
+            <p id="uid" class="uid">example@domain.com</p>
+            <button id="SearBtn" class=" Sbtn my-2 my-sm-0" type="submit" data-toggle="tooltip" title="வெளியேறு" tooltip="SignOut"><span class="fa fa-sign-out"></span></button>
+        </form>
+
+    </nav>
+    <div class="icon-bar" id="icobar" style="padding-top:30px;top:5px; transition:linear .5s;">
+        <a class="col" href="#" data-toggle="tooltip" title="முகப்பு"><span class="fa fa-3x fa-home"></span></a>
+        <a class="col" href="#" data-toggle="tooltip" title="கட்டுரை வகைகள்"><span class="fa fa-3x fa-list-alt"></span></a>
+        <a class="col" href="#" data-toggle="tooltip" title="பதிவுபெறுக"><span class="fa fa-3x fa-user-plus"></span></a>
+        <a class="col" href="#" data-toggle="tooltip" title="உதவி"><span class="fa fa-3x fa-question-circle"></span></a>
+    </div>
+    <div id="sharer" class="sharer">
+
+        <div class="btn-group-vertical sharer">
+            <div style="width:100%;"><a id="SharerClose" class="close" style="font-size:15px;color:red;">x</a></div>
+            <a href="https://facebook.com"><span class="fa fa-2x fa-facebook-square"></span></a>
+            <a href="https://twitter.com"><span class="fa fa-2x fa-twitter-square"></span></a>
+            <a href="https://linkedin.com"><span class="fa fa-2x fa-linkedin-square"></span></a>
+            <a href="https://myaccount.google.com/"><span class="fa fa-2x fa-google-plus-square"></span></a>
+        </div>
+
+    </div>
+    <div id="MainBody" class="MainContainer text-center" style="padding-top:65px;padding-bottom:35px;height:100%;">
+        <div ng-app="">
+            <h3 id="Typewriter" style="transition:linear .5s;overflow-wrap:break-word" class="typs">{{Typewriter}}</h3>
+            <div class="MsearchBox">
+                <input type="search" style="color:black;" maxlength="60" translate="yes" ng-model="Typewriter" placeholder="தேடு" aria-label="Search" id="MSbox" />
+                <button id="MsBtn" class="input-group-addon MsBtn" type="submit"><span class=" fa fa-search" id="basic-addon2"></span></button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" style="padding-top:20px;padding-bottom:10px;height:30%;">
+                <div class="col" style="height:30%; padding-top:5px;">
+                    <h4 class="ExtHdr">புதிய கட்டுரைகள்</h4>
+                    <div class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card">
+                                    <div class="cardheader">
+                                        <strong>1.கதை தலைப்பு</strong>
+                                        <button type="submit" class="close sharebtn"><span class="fa fa-share-square-o"></span></button>
+                                    </div>
+                                    <div class="cardbody">
+                                        <img class="imgg" src="Img/galleryimg.png" />
+                                        <p style="overflow:hidden">கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.</p>
+                                    </div>
+                                    <div class="cardfooter">
+                                        <div class="row">
+                                            <div class=".col">
+                                                <img class="thumbs" src="Img/authorpng.png" />
+                                            </div>
+                                            <div class="col">
+                                                <strong class="Authorinfo-I">ஆசிரியர் பெயர்</strong><br />
+                                                <strong class="Authorinfo">இடுகையிடப்பட்ட தேதி</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="cardheader">
+                                        <strong>2.கதை தலைப்பு</strong>
+                                        <button type="submit" class="close sharebtn"><span class="fa fa-share-square-o"></span></button>
+                                    </div>
+                                    <div class="cardbody">
+                                        <img class="imgg" src="Img/galleryimg.png" />
+                                        <p style="overflow:hidden">கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.</p>
+                                    </div>
+                                    <div class="cardfooter">
+                                        <div class="row">
+                                            <div class=".col">
+                                                <img class="thumbs" src="Img/authorpng.png" />
+                                            </div>
+                                            <div class="col">
+                                                <strong class="Authorinfo-I">ஆசிரியர் பெயர்</strong><br />
+                                                <strong class="Authorinfo">இடுகையிடப்பட்ட தேதி</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="cardheader">
+                                        <strong>3.கதை தலைப்பு</strong>
+                                        <button type="submit" class="close sharebtn"><span class="fa fa-share-square-o"></span></button>
+                                    </div>
+                                    <div class="cardbody">
+                                        <img class="imgg" src="Img/galleryimg.png" />
+                                        <p style="overflow:hidden">கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.</p>
+                                    </div>
+                                    <div class="cardfooter">
+                                        <div class="row">
+                                            <div class=".col">
+                                                <img class="thumbs" src="Img/authorpng.png" />
+                                            </div>
+                                            <div class="col">
+                                                <strong class="Authorinfo-I">ஆசிரியர் பெயர்</strong><br />
+                                                <strong class="Authorinfo">இடுகையிடப்பட்ட தேதி</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="cardheader">
+                                        <strong>4.கதை தலைப்பு</strong>
+                                        <button type="submit" class="close sharebtn"><span class="fa fa-share-square-o"></span></button>
+                                    </div>
+                                    <div class="cardbody">
+                                        <img class="imgg" src="Img/galleryimg.png" />
+                                        <p style="overflow:hidden">கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.</p>
+                                    </div>
+                                    <div class="cardfooter">
+                                        <div class="row" >
+                                            <div class=".col">
+                                                <img class="thumbs" src="Img/authorpng.png" />
+                                            </div>
+                                            <div class="col">
+                                                 <strong class="Authorinfo-I">ஆசிரியர் பெயர்</strong><br />
+                                                <strong class="Authorinfo">இடுகையிடப்பட்ட தேதி</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="cardheader">
+                                        <strong>5.கதை தலைப்பு</strong>
+                                        <button type="submit" class="close sharebtn"><span class="fa fa-share-square-o"></span></button>
+                                    </div>
+                                    <div class="cardbody">
+                                        <img class="imgg" src="Img/galleryimg.png" />
+                                        <p style="overflow:hidden">கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.</p>
+                                    </div>
+                                    <div class="cardfooter">
+                                        <div class="row">
+                                            <div class=".col">
+                                                <img class="thumbs" src="Img/authorpng.png" />
+                                            </div>
+                                            <div class="col">
+                                                <strong class="Authorinfo-I">ஆசிரியர் பெயர்</strong><br />
+                                                <strong class="Authorinfo">இடுகையிடப்பட்ட தேதி</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col" style="height:30%;padding-top:5px;">
+                    <h4 class="ExtHdr">
+                        சிறந்த கதைகள்
+                    </h4>
+                    <div class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card">
+                                    <div class="cardheader">
+                                        <strong>1.கதை தலைப்பு</strong>
+                                        <button type="submit" class="close sharebtn"><span class="fa fa-share-square-o"></span></button>
+                                    </div>
+                                    <div class="cardbody">
+                                        <img class="imgg" src="Img/galleryimg.png" />
+                                        <p style="overflow:hidden">கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.</p>
+                                    </div>
+                                    <div class="cardfooter">
+                                        <div class="row">
+                                            <div class=".col">
+                                                <img class="thumbs" src="Img/authorpng.png" />
+                                            </div>
+                                            <div class="col">
+                                                <strong class="Authorinfo-I">ஆசிரியர் பெயர்</strong><br />
+                                                <strong class="Authorinfo">இடுகையிடப்பட்ட தேதி</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="cardheader">
+                                        <strong>2.கதை தலைப்பு</strong>
+                                        <button type="submit" class="close sharebtn"><span class="fa fa-share-square-o"></span></button>
+                                    </div>
+                                    <div class="cardbody">
+                                        <img class="imgg" src="Img/galleryimg.png" />
+                                        <p style="overflow:hidden">கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.</p>
+                                    </div>
+                                    <div class="cardfooter">
+                                        <div class="row">
+                                            <div class=".col">
+                                                <img class="thumbs" src="Img/authorpng.png" />
+                                            </div>
+                                            <div class="col">
+                                                <strong class="Authorinfo-I">ஆசிரியர் பெயர்</strong><br />
+                                                <strong class="Authorinfo">இடுகையிடப்பட்ட தேதி</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="cardheader">
+                                        <strong>3.கதை தலைப்பு</strong>
+                                        <button type="submit" class="close sharebtn"><span class="fa fa-share-square-o"></span></button>
+                                    </div>
+                                    <div class="cardbody">
+                                        <img class="imgg" src="Img/galleryimg.png" />
+                                        <p style="overflow:hidden">கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.</p>
+                                    </div>
+                                    <div class="cardfooter">
+                                        <div class="row" >
+                                            <div class=".col">
+                                                <img class="thumbs" src="Img/authorpng.png" />
+                                            </div>
+                                            <div class="col">
+                                                <strong class="Authorinfo-I">ஆசிரியர் பெயர்</strong><br />
+                                                <strong class="Authorinfo">இடுகையிடப்பட்ட தேதி</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="cardheader">
+                                        <strong>4.கதை தலைப்பு</strong>
+                                        <button type="submit" class="close sharebtn"><span class="fa fa-share-square-o"></span></button>
+                                    </div>
+                                    <div class="cardbody">
+                                        <img class="imgg" src="Img/galleryimg.png" />
+                                        <p style="overflow:hidden">கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.</p>
+                                    </div>
+                                    <div class="cardfooter">
+                                        <div class="row" >
+                                            <div class=".col">
+                                                <img class="thumbs" src="Img/authorpng.png" />
+                                            </div>
+                                            <div class="col">
+                                                <strong class="Authorinfo-I">ஆசிரியர் பெயர்</strong><br />
+                                                <strong class="Authorinfo">இடுகையிடப்பட்ட தேதி</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="cardheader">
+                                        <strong>5.கதை தலைப்பு</strong>
+                                        <button type="submit" class="close sharebtn"><span class="fa fa-share-square-o"></span></button>
+                                    </div>
+                                    <div class="cardbody">
+                                        <img class="imgg" src="Img/galleryimg.png" />
+                                        <p style="overflow:hidden">கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.</p>
+                                    </div>
+                                    <div class="cardfooter">
+                                        <div class="row" >
+                                            <div class=".col">
+                                                <img class="thumbs" src="Img/authorpng.png" />
+                                            </div>
+                                            <div class="col">
+                                                <strong class="Authorinfo-I">ஆசிரியர் பெயர்</strong><br />
+                                                <strong class="Authorinfo">இடுகையிடப்பட்ட தேதி</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="height:30%;padding-top:5px;">
+                    <h4 class="ExtHdr">
+                        மதிப்பிடப்பட்ட கதைகள்
+                    </h4>
+                    <div class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card">
+                                    <div class="cardheader">
+                                        <strong>1.கதை தலைப்பு</strong>
+                                        <button type="submit" class="close sharebtn"><span class="fa fa-share-square-o"></span></button>
+                                    </div>
+                                    <div class="cardbody">
+                                        <img class="imgg" src="Img/galleryimg.png" />
+                                        <p style="overflow:hidden">கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.</p>
+                                    </div>
+                                    <div class="cardfooter">
+                                        <div class="row" >
+                                            <div class=".col">
+                                                <img class="thumbs" src="Img/authorpng.png" />
+                                            </div>
+                                            <div class="col">
+                                                <strong class="Authorinfo-I">ஆசிரியர் பெயர்</strong><br />
+                                                <strong class="Authorinfo">இடுகையிடப்பட்ட தேதி</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="cardheader">
+                                        <strong>2.கதை தலைப்பு</strong>
+                                        <button type="submit" class="close sharebtn"><span class="fa fa-share-square-o"></span></button>
+                                    </div>
+                                    <div class="cardbody">
+                                        <img class="imgg" src="Img/galleryimg.png" />
+                                        <p style="overflow:hidden">கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.</p>
+                                    </div>
+                                    <div class="cardfooter">
+                                        <div class="row" >
+                                            <div class=".col">
+                                                <img class="thumbs" src="Img/authorpng.png" />
+                                            </div>
+                                            <div class="col">
+                                                <strong class="Authorinfo-I">ஆசிரியர் பெயர்</strong><br />
+                                                <strong class="Authorinfo">இடுகையிடப்பட்ட தேதி</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="cardheader">
+                                        <strong>3.கதை தலைப்பு</strong>
+                                        <button type="submit" class="close sharebtn"><span class="fa fa-share-square-o"></span></button>
+                                    </div>
+                                    <div class="cardbody">
+                                        <img class="imgg" src="Img/galleryimg.png" />
+                                        <p style="overflow:hidden">கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.</p>
+                                    </div>
+                                    <div class="cardfooter">
+                                        <div class="row" >
+                                            <div class=".col">
+                                                <img class="thumbs" src="Img/authorpng.png" />
+                                            </div>
+                                            <div class="col">
+                                                <strong class="Authorinfo-I">ஆசிரியர் பெயர்</strong><br />
+                                                <strong class="Authorinfo">இடுகையிடப்பட்ட தேதி</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="cardheader">
+                                        <strong>4.கதை தலைப்பு</strong>
+                                        <button type="submit" class="close sharebtn"><span class="fa fa-share-square-o"></span></button>
+                                    </div>
+                                    <div class="cardbody">
+                                        <img class="imgg" src="Img/galleryimg.png" />
+                                        <p style="overflow:hidden">கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.</p>
+                                    </div>
+                                    <div class="cardfooter">
+                                        <div class="row">
+                                            <div class=".col">
+                                                <img class="thumbs" src="Img/authorpng.png" />
+                                            </div>
+                                            <div class="col">
+                                                <strong class="Authorinfo-I">ஆசிரியர் பெயர்</strong><br />
+                                                <strong class="Authorinfo">இடுகையிடப்பட்ட தேதி</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="cardheader">
+                                        <strong>5.கதை தலைப்பு</strong>
+                                        <button type="submit" class="close sharebtn"><span class="fa fa-share-square-o"></span></button>
+                                    </div>
+                                    <div class="cardbody">
+                                        <img class="imgg" src="Img/galleryimg.png" />
+                                        <p style="overflow:hidden">கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.கட்டுரை வரிகள் இங்கே காண்பிக்கப்படும்.</p>
+                                    </div>
+                                    <div class="cardfooter">
+                                        <div class="row" >
+                                            <div class=".col">
+                                                <img class="thumbs" src="Img/authorpng.png" />
+                                            </div>
+                                            <div class="col">
+                                                <strong class="Authorinfo-I">ஆசிரியர் பெயர்</strong><br />
+                                                <strong class="Authorinfo">இடுகையிடப்பட்ட தேதி</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="disclaimer">
+            <strong>Disclaimer</strong>
+
+        </div>
+    </div>
+    <footer class="navbar navbar-expand-sm fixed-bottom footer">
+        <p>
+            &copy; Copyright
+            <script type="text/javascript">document.write(new Date().getFullYear())</script> -  மென் எழுத்து
+        </p>
+        <div style="position:absolute;right:15px;">
+            <a href="https://facebook.com"><span class="fa fa-2x fa-facebook-square"></span></a>
+            <a href="https://twitter.com"><span class="fa fa-2x fa-twitter-square"></span></a>
+            <a href="https://linkedin.com"><span class="fa fa-2x fa-linkedin-square"></span></a>
+            <a href="https://myaccount.google.com/"><span class="fa fa-2x fa-google-plus-square"></span></a>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        $(function () {
+            $('#WhLogo').hover(function () {
+                $('#lo').css('color', 'whitesmoke');
+                $('#logg').css('color', 'whitesmoke');
+                $('#lo').css('transform', 'scale(1.5)');
+                $('#logg').css('transform', 'scale(1.5)');
+                $('#WhLogo').css('color', 'whitesmoke');
+                $('#lo').css('transition', 'linear .5s');
+                $('#logg').css('transition', 'linear .5s');
+
+            }, function () {
+                $('#lo').css('color', '#00acee');
+                $('#logg').css('color', '#00acee');
+                $('#WhLogo').css('color', '');
+                $('#WhLogo').css('transition', 'linear .5s');
+            });
+            $('.fa-share-square-o').click(function () {
+
+                $('#sharer').slideToggle('slow');
+            });
+            $('#SharerClose').click(function () {
+
+                $('#sharer').hide("slow");
+            });
+
+            $(document).ready(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+
+        });
+        $(function () {
+            $('#SearBtn').hover(function () {
+
+                $('#SearBtn').css('color', 'whitesmoke');
+                $('#SearBtn').css('transform', 'scale(1.1)');
+                $('#SearBtn').css('transition', 'linear .3s');
+            }
+                , function () {
+                    $('#SearBtn').css('color', '');
+                    $('#SearBtn').css('transform', 'scale(1.0)');
+                    $('#SearBtn').css('transition', 'linear .5s');
+                });
+
+            $('#MsBtn').hover(function () {
+
+                $('#MsBtn').css('color', 'whitesmoke');
+                $('#MsBtn').css('transform', 'scale(2)');
+                $('#MsBtn').css('transition', 'linear .3s');
+            }
+                , function () {
+                    $('#MsBtn').css('color', '');
+                    $('#MsBtn').css('transform', 'scale(1.0)');
+                    $('#MsBtn').css('transition', 'linear .5s');
+                });
+
+        });
+    </script>
+   
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            var nvbarheight = document.getElementById("Nvbar").clientHeight;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("icobar").style.top = "8px";
+            } else {
+                document.getElementById("icobar").style.top = "-50px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+    
+</body>
+</html>

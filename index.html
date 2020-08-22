@@ -1,0 +1,354 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/umd/popper.js"></script>
+    <script src="js/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <title>ArteFacts</title>
+</head>
+<body data-spy="scroll">
+    <nav id="Nvbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand Logo" id="WhLogo" href="#"><span id="lo" class=" LogoLetter">T</span>i<span class="LogoLetter" id="logg">T</span>le</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fa fa-fw fa-home"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-fw fa-list-alt"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-fw fa-user-plus"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-fw fa-question"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-fw fa-phone"></i></a>
+                </li>
+            </ul>
+                <span id="uid" class="uid">example@domain.com</span>
+                <button id="SearBtn" class=" Sbtn my-2 my-sm-0" type="submit" tooltip="SignOut"><span class="fa fa-sign-out"></span></button>
+        </div>
+    </nav>
+    <div id="sharer" class="sharer">        
+        <div class="btn-group-vertical sharer">
+            <div style="width:100%;"><a id="SharerClose" class="close" style="font-size:15px;color:red;">x</a></div>
+            <a href="https://facebook.com"><span class="fa fa-2x fa-facebook-square"></span></a>
+            <a href="https://twitter.com"><span class="fa fa-2x fa-twitter-square"></span></a>
+            <a href="https://linkedin.com"><span class="fa fa-2x fa-linkedin-square"></span></a>
+            <a href="https://myaccount.google.com/"><span class="fa fa-2x fa-google-plus-square"></span></a>
+        </div>
+    </div>
+   
+    <div class="container main-container">
+            <h3 id="Typewriter" class="typs m-auto"></h3>
+            <div class="MsearchBox  m-auto">
+                <input type="search" placeholder="Search" aria-label="Search" id="MSbox" oninput="updateSearchText(this.value)" />
+                <button id="MsBtn" class="input-group-addon MsBtn" type="submit"><span class=" fa fa-search" id="basic-addon2"></span></button>
+            </div>
+        <div class="row" style="padding-top:50px;padding-bottom:10px;">
+            <div class="col" style="padding:2px;">
+                <h2 style="background-color:#d3d3d3;border-radius:5px;position:sticky">New Stories</h2>
+                <div class="storyholder">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class=".col">
+                                    <img src="Img/galleryimg.png" class="thumbs" />
+                                </div>
+                                <div class="col">
+                                    <h6><strong>Story Title</strong></h6>
+                                    <p style="overflow:hidden">
+                                        Story lines Story lines Story lines Story lines Story lines Story lines Story lines
+                                        Story lines Story lines Story lines Story lines Story lines Story lines Story lines
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="btn-group text-center">
+                                <button type="submit"><span class="fa fa-thumbs-o-up"></span></button>
+                                <button type="submit"><span class="fa fa-thumbs-o-down"></span></button>
+                                <button type="submit"><span class="fa fa-comments-o"></span></button>
+                                <button type="submit"><span class="fa fa-share-square-o"></span></button>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class=".col">
+                                    <img src="Img/galleryimg.png" class="thumbs" />
+                                </div>
+                                <div class="col">
+                                    <h6><strong>Story Title</strong></h6>
+                                    <p style="overflow:hidden">
+                                        Story lines Story lines Story lines Story lines Story lines Story lines Story lines
+                                        Story lines Story lines Story lines Story lines Story lines Story lines Story lines
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="btn-group text-center">
+                                <button type="submit"><span class="fa fa-thumbs-o-up"></span></button>
+                                <button type="submit"><span class="fa fa-thumbs-o-down"></span></button>
+                                <button type="submit"><span class="fa fa-comments-o"></span></button>
+                                <button type="submit"><span class="fa fa-share-square-o"></span></button>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class=".col">
+                                    <img src="Img/galleryimg.png" class="thumbs" />
+                                </div>
+                                <div class="col">
+                                    <h6><strong>Story Title</strong></h6>
+                                    <p style="overflow:hidden">
+                                        Story lines Story lines Story lines Story lines Story lines Story lines Story lines
+                                        Story lines Story lines Story lines Story lines Story lines Story lines Story lines
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="btn-group text-center">
+                                <button type="submit"><span class="fa fa-thumbs-o-up"></span></button>
+                                <button type="submit"><span class="fa fa-thumbs-o-down"></span></button>
+                                <button type="submit"><span class="fa fa-comments-o"></span></button>
+                                <button type="submit"><span class="fa fa-share-square-o"></span></button>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class=".col">
+                                    <img src="Img/galleryimg.png" class="thumbs" />
+                                </div>
+                                <div class="col">
+                                    <h6><strong>Story Title</strong></h6>
+                                    <p style="overflow:hidden">
+                                        Story lines Story lines Story lines Story lines Story lines Story lines Story lines
+                                        Story lines Story lines Story lines Story lines Story lines Story lines Story lines
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="btn-group text-center">
+                                <button type="submit"><span class="fa fa-thumbs-o-up"></span></button>
+                                <button type="submit"><span class="fa fa-thumbs-o-down"></span></button>
+                                <button type="submit"><span class="fa fa-comments-o"></span></button>
+                                <button type="submit"><span class="fa fa-share-square-o"></span></button>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class=".col">
+                                    <img src="Img/galleryimg.png" class="thumbs" />
+                                </div>
+                                <div class="col">
+                                    <h6><strong>Story Title</strong></h6>
+                                    <p style="overflow:hidden">
+                                        Story lines Story lines Story lines Story lines Story lines Story lines Story lines
+                                        Story lines Story lines Story lines Story lines Story lines Story lines Story lines
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="btn-group text-center">
+                                <button type="submit"><span class="fa fa-thumbs-o-up"></span></button>
+                                <button type="submit"><span class="fa fa-thumbs-o-down"></span></button>
+                                <button type="submit"><span class="fa fa-comments-o"></span></button>
+                                <button type="submit"><span class="fa fa-share-square-o"></span></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col" style="padding:2px;">
+                <h2 style="background-color:#d3d3d3;border-radius:5px;position:sticky">Top Stories</h2>
+                <div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class=".col">
+                                    <img src="Img/galleryimg.png" class="thumbs" />
+                                </div>
+                                <div class="col">
+                                    <h6><strong>Story Title</strong></h6>
+                                    <p style="overflow:hidden">
+                                        Story lines Story lines Story lines Story lines Story lines Story lines Story lines
+                                        Story lines Story lines Story lines Story lines Story lines Story lines Story lines
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="btn-group text-center">
+                                <button type="submit"><span class="fa fa-thumbs-o-up"></span></button>
+                                <button type="submit"><span class="fa fa-thumbs-o-down"></span></button>
+                                <button type="submit"><span class="fa fa-comments-o"></span></button>
+                                <button type="submit"><span class="fa fa-share-square-o"></span></button>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class=".col">
+                                    <img src="Img/galleryimg.png" class="thumbs" />
+                                </div>
+                                <div class="col">
+                                    <h6><strong>Story Title</strong></h6>
+                                    <p style="overflow:hidden">
+                                        Story lines Story lines Story lines Story lines Story lines Story lines Story lines
+                                        Story lines Story lines Story lines Story lines Story lines Story lines Story lines
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="btn-group text-center">
+                                <button type="submit"><span class="fa fa-thumbs-o-up"></span></button>
+                                <button type="submit"><span class="fa fa-thumbs-o-down"></span></button>
+                                <button type="submit"><span class="fa fa-comments-o"></span></button>
+                                <button type="submit"><span class="fa fa-share-square-o"></span></button>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class=".col">
+                                    <img src="Img/galleryimg.png" class="thumbs" />
+                                </div>
+                                <div class="col">
+                                    <h6><strong>Story Title</strong></h6>
+                                    <p style="overflow:hidden">
+                                        Story lines Story lines Story lines Story lines Story lines Story lines Story lines
+                                        Story lines Story lines Story lines Story lines Story lines Story lines Story lines
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="btn-group text-center">
+                                <button type="submit"><span class="fa fa-thumbs-o-up"></span></button>
+                                <button type="submit"><span class="fa fa-thumbs-o-down"></span></button>
+                                <button type="submit"><span class="fa fa-comments-o"></span></button>
+                                <button type="submit"><span class="fa fa-share-square-o"></span></button>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class=".col">
+                                    <img src="Img/galleryimg.png" class="thumbs" />
+                                </div>
+                                <div class="col">
+                                    <h6><strong>Story Title</strong></h6>
+                                    <p style="overflow:hidden">
+                                        Story lines Story lines Story lines Story lines Story lines Story lines Story lines
+                                        Story lines Story lines Story lines Story lines Story lines Story lines Story lines
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="btn-group text-center">
+                                <button type="submit"><span class="fa fa-thumbs-o-up"></span></button>
+                                <button type="submit"><span class="fa fa-thumbs-o-down"></span></button>
+                                <button type="submit"><span class="fa fa-comments-o"></span></button>
+                                <button type="submit"><span class="fa fa-share-square-o"></span></button>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class=".col">
+                                    <img src="Img/galleryimg.png" class="thumbs" />
+                                </div>
+                                <div class="col">
+                                    <h6><strong>Story Title</strong></h6>
+                                    <p style="overflow:hidden">
+                                        Story lines Story lines Story lines Story lines Story lines Story lines Story lines
+                                        Story lines Story lines Story lines Story lines Story lines Story lines Story lines
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="btn-group text-center">
+                                <button type="submit"><span class="fa fa-thumbs-o-up"></span></button>
+                                <button type="submit"><span class="fa fa-thumbs-o-down"></span></button>
+                                <button type="submit"><span class="fa fa-comments-o"></span></button>
+                                <button type="submit"><span class="fa fa-share-square-o"></span></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>               
+        </div>
+    </div>
+            <div class='right-side-bar'>
+                        <h2 style="background-color:#d3d3d3;border-radius:5px;position:sticky">Top Rated</h2>
+                        <div class="storyholder">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class=".col">
+                                            <img src="Img/galleryimg.png" class="thumbs" />
+                                        </div>
+                                        <div class="col">
+                                            <h6><strong>Story Title</strong></h6>
+                                            <p style="overflow:hidden">
+                                                Story lines Story lines Story lines Story lines Story lines Story lines Story lines
+                                                Story lines Story lines Story lines Story lines Story lines Story lines Story lines
+                                            </p>
+    
+                                        </div>
+                                    </div>
+                                    <div class="btn-group text-center">
+                                        <button type="submit"><span class="fa fa-thumbs-o-up"></span></button>
+                                        <button type="submit"><span class="fa fa-thumbs-o-down"></span></button>
+                                        <button type="submit"><span class="fa fa-comments-o"></span></button>
+                                        <button type="submit"><span class="fa fa-share-square-o"></span></button>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class=".col">
+                                            <img src="Img/galleryimg.png" class="thumbs" />
+                                        </div>
+                                        <div class="col">
+                                            <h6><strong>Story Title</strong></h6>
+                                            <p style="overflow:hidden">
+                                                Story lines Story lines Story lines Story lines Story lines Story lines Story lines
+                                                Story lines Story lines Story lines Story lines Story lines Story lines Story lines
+                                            </p>
+    
+                                        </div>
+                                    </div>
+                                    <div class="btn-group text-center">
+                                        <button type="submit"><span class="fa fa-thumbs-o-up"></span></button>
+                                        <button type="submit"><span class="fa fa-thumbs-o-down"></span></button>
+                                        <button type="submit"><span class="fa fa-comments-o"></span></button>
+                                        <button type="submit"><span class="fa fa-share-square-o"></span></button>
+                                    </div>
+                                </li>                                
+                            </ul>
+                        </div>
+    
+                    </div>
+    <div class="disclaimer">
+        <strong>Disclaimer</strong>
+    </div>
+    <footer class="navbar navbar-expand-sm fixed-bottom footer">
+        <p>
+            &copy; Copyright
+            <script type="text/javascript">document.write(new Date().getFullYear())</script> - Title
+        </p>
+        <div style="position:absolute;right:15px;">
+            <a href="https://facebook.com"><span class="fa fa-2x fa-facebook-square"></span></a>
+            <a href="https://twitter.com"><span class="fa fa-2x fa-twitter-square"></span></a>
+            <a href="https://linkedin.com"><span class="fa fa-2x fa-linkedin-square"></span></a>
+            <a href="https://myaccount.google.com/"><span class="fa fa-2x fa-google-plus-square"></span></a>
+        </div>
+    </footer>
+    <script src="js/site.js"></script>
+</body>
+</html>
